@@ -1,0 +1,46 @@
+
+
+<header>
+    <nav class="navbar">
+        <div class="logo">LinkTube</div>
+        <ul class="nav-links">
+            <li><a href="linktubehomepage.html" onclick="loadPage('linktubehomepage.html')">Home</a></li>
+            <!-- <li><a href="#">About</a></li> -->
+            <li><a href="feedback.html">feedback</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+        <div class="menu-toggle">&#9776</div>
+    </nav>
+
+    <script>
+        // Toggle the navigation menu on small screens
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+    <div class="scrollmenu">
+        <a  href="ai.html">AI</a>
+        <a  href="c.html">C & C++</a>
+        <a  href="coa.html">COA</a>
+        <a  href="cn.html">CN</a>
+        <a  href="dsa.html">DSA</a>
+        <a  href="dbms.html">DBMS</a>
+        <a  href="os.html">OS</a>
+        <a  href="python.html">PYTHON</a>
+        <a  href="webdevelopment.html">WEB DEVELOPMENT</a>
+        <a  href="dataScience.html">DATA SCIENCE</a>
+        <a  href="machineLearning.html">MACHINE LEARNING</a>
+        <a  href="neuralNetworks.html">NEURAL NETWORKS</a>
+        <a  href="java.html">JAVA</a>
+        <a  href="javascript.html">JAVASCRIPT</a>
+        
+    </div>
+   
+   
+</header>
+
+

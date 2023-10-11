@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - LinkTube</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(142, 205, 221);
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #090909;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .feedback-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+        }
+        .attribute {
+            margin-bottom: 15px;
+        }
+        .attribute-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .attribute-name {
+            font-weight: bold;
+            min-width: 150px;
+        }
+        .attribute-value {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Give Your Feedback Here</h1>
+    <button onclick="openGoogleForm()">Open Google Form</button>
+
+    <script>
+        function openGoogleForm() {
+            // Replace the URL below with the link to your Google Form
+            var googleFormUrl = 'https://forms.gle/Y9rWT2YJ71fTSeyYA';
+            window.open(googleFormUrl, '_blank');
+        }
+    </script>
+     <div class="feedback-container" id="feedbackContainer">
+    </div>
+    <div class="feedback-container" id="feedbackContainer">
+    </div>
+
+    <script>
+        var feedbackResponses = [
+            {
+                Name: 'sravanthi',
+                Profession: 'student',
+                'Course Name': 'Web Development',
+                'YouTube Channel Name': 'edureka!',
+                'Playlist Name (or Video Title)': 'Full Stack Web Development Full Course',
+                'Why Recommend': 'Great content and clear explanations.',
+                'Have You Watched the Course': 'Yes',
+            },
+            {
+                Name: 'sabha',
+                Profession: 'student',
+                'Course Name': 'python',
+                'YouTube Channel Name': 'Telusko',
+                'Playlist Name (or Video Title)': 'Python for Beginners (Full Course)',
+                'Why Recommend': 'Fantastic tutorials',
+                'Have You Watched the Course': 'Yes',
+            },
+            // Add more feedback objects as needed
+        ];
+
+        var feedbackContainer = document.getElementById('feedbackContainer');
+
+        feedbackResponses.forEach(function (feedback) {
+            var feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'attribute';
+
+            for (var key in feedback) {
+                if (feedback.hasOwnProperty(key)) {
+                    var attributeItemDiv = document.createElement('div');
+                    attributeItemDiv.className = 'attribute-item';
+                    attributeItemDiv.innerHTML = `
+                        <span class="attribute-name">${key}:</span>
+                        <span class="attribute-value">${feedback[key]}</span>
+                    `;
+                    feedbackDiv.appendChild(attributeItemDiv);
+                }
+            }
+
+            feedbackContainer.appendChild(feedbackDiv);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        .feedback-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left; /* Align text to the left */
+        }
+        .attribute {
+            margin-bottom: 15px;
+        }
+        .attribute-name {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 150px; /* Adjust the width as needed */
+        }
+        .attribute-value {
+            display: inline-block;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Give Your Feedback Here</h1>
+    <button onclick="openGoogleForm()">Open Google Form</button>
+
+    <script>
+        function openGoogleForm() {
+            // Replace the URL below with the link to your Google Form
+            var googleFormUrl = 'https://your-google-form-url-here';
+            window.open(googleFormUrl, '_blank');
+        }
+    </script>
+     <div class="feedback-container" id="feedbackContainer">
+    </div>
+
+    <script>
+        // Manually entered feedback responses
+        var feedbackResponses = [
+            {
+                Name: 'John Doe',
+                Profession: 'Engineer',
+                CourseName: 'Web Development',
+                YouTubeChannelName: 'Tech Tutorials',
+                PlaylistOrVideoTitle: 'HTML Basics',
+                WhyRecommend: 'Great content and clear explanations.',
+                WatchedCourse: 'Yes',
+            },
+            {
+                Name: 'Jane Smith',
+                Profession: 'Designer',
+                CourseName: 'Graphic Design',
+                YouTubeChannelName: 'Design World',
+                PlaylistOrVideoTitle: 'Adobe Illustrator Tips',
+                WhyRecommend: 'Fantastic tutorials and creative ideas.',
+                WatchedCourse: 'Yes',
+            },
+            // Add more feedback objects as needed
+        ];
+
+        var feedbackContainer = document.getElementById('feedbackContainer');
+
+        feedbackResponses.forEach(function (feedback) {
+            var feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'attribute';
+
+            for (var key in feedback) {
+                if (feedback.hasOwnProperty(key)) {
+                    var attributeItemDiv = document.createElement('div');
+                    attributeItemDiv.className = 'attribute-item';
+                    attributeItemDiv.innerHTML = `
+                        <span class="attribute-name">${key}:</span>
+                        <span class="attribute-value">${feedback[key]}</span>
+                    `;
+                    feedbackDiv.appendChild(attributeItemDiv);
+                }
+            }
+
+            feedbackContainer.appendChild(feedbackDiv);
+        });
+    </script>
+</body>
+</html> -->

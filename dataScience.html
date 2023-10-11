@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="headerstyles.css">
+    <title>Data Science - LinkTube</title>
+    
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        // Load the header using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <div class="page-content">
+        <!-- 1st video-gird contains three channels -->
+        <div class="video-grid">
+            <!-- course  channel 1 -->
+            <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">statistics</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/9k8r5l7j5azbXHWXMuSeh0XYau4BcD3N6O-RmxzUqeSSQ1FKXLyIxXwRX8ENLEd9tTvLVFgc=s176-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                statistics 101 course
+                            </p>
+                            <p class ="video-author">
+                                Brandon Foltz
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a  href="https://www.youtube.com/@BrandonFoltz/playlists?view=50&sort=dd&shelf_id=3">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- course  channel 2 -->
+            <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">Data Analysis</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/ytc/APkrFKYJuM9JCGWxOqFPrxRH09LZQHekpZ5z43oJ7sWepA=s176-c-k-c0x00ffffff-no-rj
+                        ">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                Data Analysis w/ Python 3 and Pandas
+                            </p>
+                            <p class ="video-author">
+                                sentdex
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a href="https://www.youtube.com/playlist?list=PLQVvvaa0QuDfSfqQuee6K8opKtZsh7sA9">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- course  channel 3 -->
+            <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">Data Visualization</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/ytc/APkrFKYJuM9JCGWxOqFPrxRH09LZQHekpZ5z43oJ7sWepA=s176-c-k-c0x00ffffff-no-rj
+                        ">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                Matplotlib
+                            </p>
+                            <p class ="video-author">
+                                sentdex
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a href="https://www.youtube.com/@sentdex/playlists?view=50&sort=dd&shelf_id=7">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-grid">
+            <!-- course  channel 4 -->
+            <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">Statistics</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/cwJBNZUHoJL8HvoIfkULt2IgNu1LF7AL9cYDqSCTGWvG5lASV_y8LiHkMyVUm5Kqt03TLFUCSw=s176-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                Statistics Fundamentals
+                            </p>
+                            <p class ="video-author">
+                                StatQuest with Josh Starmer
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a  href="https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- course  channel 5 -->
+            <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">Data Science</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/OtB--dcR_oNUZUaUsuyk2ShT5nFYjEcj9Yxx50-Nner03vXKt4IWXtP--JrnSGQbwRSHYuVb38g=s176-c-k-c0x00ffffff-no-rj
+                        ">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                Data Science Training Videos
+                            </p>
+                            <p class ="video-author">
+                                edureka!
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a href="https://www.youtube.com/watch?v=-ETQ97mXXF0&list=PL9ooVrP1hQOGR57Y4g1LFhn1JXVgn1lkX">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- course  channel 6 -->
+            <!-- <div class="course">
+                <div class="course-name">
+                    <h2 class="course-heading">course name</h2>
+                </div>
+                <div>
+                    <div class = "channel-picture">
+                        <img class="profile-picture" src="channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <div class="video-text">
+                            <p class="video-title">
+                                Talking Tech and AI with Google CEO Sundar Pichai!
+                            </p>
+                            <p class ="video-author">
+                                Marques Brownlee
+                            </p>
+                        </div>
+                        <div class ="video-link">
+                            <a href="">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
