@@ -13,6 +13,7 @@ body{
 
 /* Style the navigation bar */
 header {
+    position:fixed;
     background-color: #0f0f10f3;
     color: #fff;
     padding: 0 0;
