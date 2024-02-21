@@ -3,6 +3,8 @@ let availableKeywords = [
     { keyword: "Html", link: "webdevelopment.html" },
     { keyword: "web development", link: "webdevelopment.html" },
     { keyword: "fullstack web development", link: "webdevelopment.html" },
+    { keyword: "backend development", link: "webdevelopment.html" },
+    { keyword: "frontened development", link: "webdevelopment.html" },
     { keyword: "JavaScript", link: "javascript.html" },
     { keyword: "c programming", link: "c.html" },
     { keyword: "c language", link: "c.html" },
